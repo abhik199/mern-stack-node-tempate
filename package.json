@@ -10,13 +10,8 @@
         "format:fix": "prettier . --write",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "prepare": "husky install",
-        "test": "jest --no-cache --coverage --all --runInBand",
-        "test:watch": "jest --watch --runInBand",
-        "start": "ts-node src/index.ts",
-        "migration:generate": "typeorm-ts-node-commonjs migration:generate",
-        "migration:run": "typeorm-ts-node-commonjs migration:run",
-        "migration:create": "typeorm-ts-node-commonjs migration:create"
+        "prepare": "husky",
+        "start": "ts-node src/index.ts"
     },
     "keywords": [],
     "author": "",
@@ -32,6 +27,7 @@
         "@typescript-eslint/eslint-plugin": "^7.1.1",
         "@typescript-eslint/parser": "^7.1.1",
         "eslint-config-prettier": "^9.1.0",
+        "husky": "^9.0.11",
         "lint-staged": "^15.2.2",
         "nodemon": "^3.1.0",
         "prettier": "3.2.5",
