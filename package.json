@@ -21,6 +21,12 @@
         "express": "^4.18.3",
         "winston": "^3.12.0"
     },
+    "lint-staged": {
+        "*.ts": [
+            "npm run lint:fix",
+            "npm run format:fix"
+        ]
+    },
     "devDependencies": {
         "@types/express": "github:types/express",
         "@types/winston": "^2.4.4",
